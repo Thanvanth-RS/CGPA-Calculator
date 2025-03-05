@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGPA Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Ads Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1793778020754124"
+     crossorigin="anonymous"></script>
+  <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>CGPA Calculator</h1>
+    <p>Select your grades and calculate your CGPA instantly!</p>
+
+    <!-- Grade Input Section -->
+    <div class="grade-input">
+      <div class="subject">
+        <label for="subject1">BASICS OF ELECTRICAL AND ELECTRONICS ENGINEERING:</label>
+        <select id="subject1">
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="U">U</option>
+        </select>
+      </div>
+      <div class="subject">
+        <label for="subject2">BASICS OF ELECTRICAL AND ELECTRONICS ENGINEERING LABORATORY:</label>
+        <select id="subject2">
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="U">U</option>
+        </select>
+      </div>
+      <div class="subject">
+        <label for="subject3">COMMUNICATION SKILLS IN ENGLISH:</label>
+        <select id="subject3">
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="U">U</option>
+        </select>
+      </div>
+      <div class="subject">
+        <label for="subject4">BASIC APTITUDE-1:</label>
+        <select id="subject4">
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="U">U</option>
+        </select>
+      </div>
+      <div class="subject">
+        <label for="subject5">LINEAR ALGEBRA AND CALCULUS WITH MATLAB:</label>
+        <select id="subject5">
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="U">U</option>
+        </select>
+      </div>
+      <div class="subject">
+        <label for="subject6">JAPANESE:</label>
+        <select id="subject6">
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="U">U</option>
+        </select>
+      </div>
+      <div class="subject">
+        <label for="subject7">ENGINEERING PHYSICS LABORATORY:</label>
+        <select id="subject7">
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="U">U</option>
+        </select>
+      </div>
+      <div class="subject">
+        <label for="subject8">ENGINEERING PHYSICS:</label>
+        <select id="subject8">
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="U">U</option>
+        </select>
+      </div>
+      <div class="subject">
+        <label for="subject9">PYTHON PROGRAMMING LABORATORY:</label>
+        <select id="subject9">
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="U">U</option>
+        </select>
+      </div>
+      <div class="subject">
+        <label for="subject10">PROBLEM SOLVING USING PYTHON PROGRAMMING:</label>
+        <select id="subject10">
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="U">U</option>
+        </select>
+      </div>
+      <div class="subject">
+        <label for="subject11">HERITAGE OF TAMILS:</label>
+        <select id="subject11">
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="U">U</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Calculate Button -->
+    <button id="calculate-btn">Calculate CGPA</button>
+
+    <!-- Result Display -->
+    <div class="result">
+      <h2>Your CGPA: <span id="cgpa-result">0.00</span></h2>
+    </div>
+
+    <!-- Google Ads -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1793778020754124"
+         data-ad-slot="1014256278"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
